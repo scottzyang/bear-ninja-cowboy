@@ -32,3 +32,10 @@ while player == False:
 
     player = False
     computer = roles[randint(0,2)]
+
+    play_again = input("Would you like to play again? (yes/no) > ")
+    if play_again == 'yes':
+      player = False
+      computer = roles[randint(0,2)]
+    else:
+      break
