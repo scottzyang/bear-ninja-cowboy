@@ -1,2 +1,2 @@
-user_input = input("Greetings, what is your name? > " )
-print("Greetings", user_input)
+player = input("Bear, Ninja, or Cowboy? > " )
+print(player)
