@@ -21,7 +21,7 @@ def win_or_lose(player, computer):
         else: # computer is ninja, player is bear
             print("You win!", player, "eats", computer)
 
-# Intro
+# Game intro
 print("Get ready to play Bear, Ninja Cowboy!")
 
 # Instructions to play
@@ -36,17 +36,17 @@ roles = ["Bear", "Ninja", "Cowboy"]
 # declare a variable called play and assigned to boolean False
 player = False
 
-# initiates game logic
+# verifies validity of user character selection
 while player == False:
-    # verifies if user input exist as valid character
     while True:
-        player = input("Bear, Ninja, or Cowboy? > " ) # Prompts user for player selection
+        player = input("Bear, Ninja, or Cowboy? > " ) 
         computer = roles[randint(0,2)]
         if player not in roles:
             print("Please input a valid character")
         else:
             break
-
+    
+    # compares player and computer to determine the winner
     win_or_lose(player, computer)
 
     # prompt user if they want to play again
